@@ -1,7 +1,7 @@
 body{background:#232323;color:#f98033;font-family:monospace;-webkit-font-smoothing:antialiased;}
 .cont{max-width:450px;margin:5vh auto;font-size: 14px;letter-spacing: 1px;text-transform: uppercase;}
 .bigdot{width:20px;height:20px;background-color:#f98033;border:1px solid #232323;box-shadow:0px 0px 0px 1px #f98033;border-radius: 50px;}
-.row{text-align: center;}.row span{display:inline-block;}
+.row{text-align: center;}.row span{display:inline-block;width:130px;}
 .clear{clear:both;}
 .fs{font-family: sans-serif;letter-spacing: 6px;font-weight: 800;text-transform: uppercase;font-size: 12px;}
 ul.dotrun{width:100%;margin:9px 0px;padding:0px;}
@@ -71,6 +71,8 @@ ul.status.ticker li{
     animation-delay: 10s;
   }
 
+  .ref{margin-top: -20px;}
+
 
 /* ANIMATIONS */
 .flash{animation-name: flash;
@@ -114,4 +116,10 @@ ul.status.ticker li{
   0% {background-color: #f98033;}
   50% {background-color: #ffb585;}
   100% {background-color: #f98033;}
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 500px) {
+  .left,.right,.polka .ref{display:none;}
+  .cont{width:90%;}
 }
