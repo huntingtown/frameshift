@@ -2,7 +2,7 @@ body{background:#232323;color:#f98033;font-family:monospace;-webkit-font-smoothi
 .cont{max-width:450px;margin:5vh auto;font-size: 14px;letter-spacing: 1px;text-transform: uppercase;}
 .bigdot{width:20px;height:20px;background-color:#f98033;border:1px solid #232323;box-shadow:0px 0px 0px 1px #f98033;border-radius: 50px;}
 .row{text-align: center;}.row span{display:inline-block;width:130px;}
-.clear{clear:both;}
+.clear{clear:both;} ul{padding:0} li{list-style-type: none;}
 .fs{font-family: sans-serif;letter-spacing: 6px;font-weight: 800;text-transform: uppercase;font-size: 12px;}
 ul.dotrun{width:100%;margin:9px 0px;padding:0px;}
 ul.dotrun li{width:6px; height:6px;background-color:#f98033;list-style-type: none; margin:2px;border-radius:10px;}
@@ -71,7 +71,23 @@ ul.status.ticker li{
     animation-delay: 10s;
   }
 
-  .ref{margin-top: -20px;}
+.ref{margin-top: -20px;}
+.mini{font-size: 8px;}
+ul.deker{padding:10%}
+.deker li {
+    width: 46%;
+    float: left;
+    text-align: center;
+    margin: 0px 2% 15px;
+    background: #232323;
+    border: 1px solid;
+    box-sizing: border-box;
+    border-right: 3px solid;
+    border-left: 3px solid;
+    padding: 5px 0px;
+    animation: repglow 3s steps(50);
+    animation-iteration-count: infinite;
+}
 
 
 /* ANIMATIONS */
@@ -116,6 +132,12 @@ ul.status.ticker li{
   0% {background-color: #f98033;}
   50% {background-color: #ffb585;}
   100% {background-color: #f98033;}
+}
+
+@keyframes repglow{
+  0% {border-color: #f98033;color: #f98033;}
+  50% {border-color: #ffb585;color: #ffb585;}
+  100% {border-color: #f98033;color: #f98033;}
 }
 
 /*MEDIA QUERY*/
