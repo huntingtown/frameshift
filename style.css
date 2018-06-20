@@ -121,5 +121,5 @@ ul.status.ticker li{
 /*MEDIA QUERY*/
 @media only screen and (max-width: 500px) {
   .left,.right,.polka .ref{display:none;}
-  .cont{width:90%;}
+  .cont{width:95%;}
 }
