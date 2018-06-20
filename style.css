@@ -1,5 +1,5 @@
 body{background:#232323;color:#f98033;font-family:monospace;-webkit-font-smoothing:antialiased;}
-.cont{max-width:450px;margin:5em auto;font-size: 14px;letter-spacing: 1px;text-transform: uppercase;}
+.cont{max-width:450px;margin:5vh auto;font-size: 14px;letter-spacing: 1px;text-transform: uppercase;}
 .bigdot{width:20px;height:20px;background-color:#f98033;border:1px solid #232323;box-shadow:0px 0px 0px 1px #f98033;border-radius: 50px;}
 .row{text-align: center;}.row span{display:inline-block;}
 .clear{clear:both;}
@@ -44,6 +44,33 @@ ul.status li{
   padding:1px;
   margin-bottom:10px;
 }
+.tickerbox{
+  border:1px solid;
+  padding:1px;
+  margin:auto;
+  margin-bottom:10px;
+  width:120px
+}
+ul.status.ticker {
+    border: 0px;
+    padding: 0px;
+    height: 10px;
+    width: 120px;
+    overflow: hidden;
+}
+
+ul.status.ticker li{
+  width: 13px;
+    height: 10px;
+    background: #f98033;
+    margin: 1px;
+    box-sizing: border-box;
+    list-style-type: none;
+    float: left;
+    animation: glow 2s steps(50, end);
+    animation-delay: 10s;
+  }
+
 
 /* ANIMATIONS */
 .flash{animation-name: flash;
@@ -73,4 +100,18 @@ ul.status li{
 @keyframes loading{
   from {width:0%;}
   to {width:100%;}
+}
+
+.ticker{
+  animation: ticker 10s steps(8, end);
+}
+@keyframes ticker{
+  from {width:0%;}
+  to {width:100%;}
+}
+
+@keyframes glow{
+  0% {background-color: #f98033;}
+  50% {background-color: #ffb585;}
+  100% {background-color: #f98033;}
 }
