@@ -68,7 +68,7 @@ ul.status.ticker li{
     list-style-type: none;
     float: left;
     animation: glow 2s steps(50, end);
-    animation-delay: 10s;
+    animation-delay: 4s;
   }
 
 .ref{margin-top: -20px;}
@@ -121,7 +121,7 @@ ul.deker{padding:10%}
 }
 
 .ticker{
-  animation: ticker 10s steps(8, end);
+  animation: ticker 4s steps(8, end);
 }
 @keyframes ticker{
   from {width:0%;}
@@ -138,6 +138,17 @@ ul.deker{padding:10%}
   0% {border-color: #f98033;color: #f98033;}
   50% {border-color: #ffb585;color: #ffb585;}
   100% {border-color: #f98033;color: #f98033;}
+}
+
+.loaded{
+  animation:loaded 3s steps(100, end);
+  animation-delay:5s;
+  overflow:hidden;height:0%;
+  animation-fill-mode: forwards;
+}
+@keyframes loaded{
+  from {height:0%;overflow:hidden;}
+  to {height:100%;overflow:visible;}
 }
 
 /*MEDIA QUERY*/
