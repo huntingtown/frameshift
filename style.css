@@ -19,6 +19,10 @@ ul.dotrun li:nth-child(4),ul.dotrun li:nth-child(5),ul.dotrun li:nth-child(6){fl
     background-size: 10px 10px;
     background-position: 0px 0, 15px 15px;
     height:532px;
+    animation-name:polka;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(100, end);
 }
 ul.status{
     border: 1px solid;
@@ -70,7 +74,6 @@ ul.status.ticker li{
     animation: glow 2s steps(50, end);
     animation-delay: 4s;
   }
-
 .ref{margin-top: -20px;}
 .mini{font-size: 8px;}
 ul.deker{padding:10%}
@@ -88,7 +91,14 @@ ul.deker{padding:10%}
     animation: repglow 3s steps(50);
     animation-iteration-count: infinite;
 }
+.deets ul{border-top:1px dashed rgba(249, 128, 51,0.35);border-bottom:1px dashed rgba(249, 128, 51,0.35);padding:10px 0px; margin:10px 0px;}
+.deets ul li{width:46%; margin:3px 2%;float:left;text-align: right;}
+.deets ul li .cat{float: left; font-weight:900;}
+p{text-transform: none; text-align: justify;}
 
+.deets{font-size: 10px;}
+
+img {margin: 0px 1% 5px;box-sizing: border-box;max-width: 98%;border: 1px dashed rgba(249, 128, 51,0.35);box-shadow: 0px 0px 0px 3px #232323;}
 
 /* ANIMATIONS */
 .flash{animation-name: flash;
@@ -150,7 +160,12 @@ ul.deker{padding:10%}
   0% {height:0px;overflow:hidden;}
   99% {height:100%;overflow:visible;}
   100% {height:auto;}
+}
 
+@keyframes polka{
+  0%{background-position: 0px 0px,  15px 15px;}
+  50%{background-position: 0px 15px, 15px 30px;}
+  100%{background-position: 0px 30px, 15px 45px;}
 }
 
 /*MEDIA QUERY*/
