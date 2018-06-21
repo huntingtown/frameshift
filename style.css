@@ -147,8 +147,10 @@ ul.deker{padding:10%}
   animation-fill-mode: forwards;
 }
 @keyframes loaded{
-  from {height:0%;overflow:hidden;}
-  to {height:100%;overflow:visible;}
+  0% {height:0px;overflow:hidden;}
+  99% {height:100%;overflow:visible;}
+  100% {height:auto;}
+
 }
 
 /*MEDIA QUERY*/
