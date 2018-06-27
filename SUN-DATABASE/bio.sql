@@ -1,7 +1,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="row">
-      <span class="fs" style="text-align:right;">explorer</span> <a href="index.html"><div class="bigdot boxflash" style="display:inline-block;margin-bottom: -5px;"></div></a> <span>0005559845.AA</span>
+      <span class="fs" style="text-align:right;">explorer</span><a href="index.html"><i class="material-icons">control_camera</i></a> <span>0005559845.AA</span>
     </div>
     <ul class="dotrun"><li></li><li></li><li></li><li></li><li></li><li></li><div class="clear"></div></ul>
     <div class="polka" style="height:auto;">
@@ -89,89 +89,17 @@
       <br><br>
       <div class="tac fs">deker list</div>
       <ul class="dotrun"><li></li><li></li><li></li><li></li><li></li><li></li><div class="clear"></div></ul>
-      <div class="polka" style="height:auto;"></div>
+      <div class="polka" style="height:auto;">
         <ul class="deker">
-          <a href="appliances.html">
-            <li>
-              <div class="block">
-                EQP
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[EQUIPMENT]"<hr>
-                weaponry : armour : attire : hardwear : software : systems spikes
-              </div>
-              <div class="icon"><i class="material-icons">memory</i></div>
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <div class="block">
-                TSP
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[TRANSPORT]"<hr>
-                bikes : cars : trucks : assault vehicles : UV : ships : AUV
-              </div>
-              <div class="icon"><i class="material-icons">device_hub</i></div>
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <div class="block">
-                PHM
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[PHARMA]"<hr>
-                bikes : cars : trucks : assault vehicles : UV : ships : AUV
-              </div>
-              <div class="icon"><i class="material-icons">grain</i></div>
-            </li>
-          </a>
-          <a href="augments.html">
-            <li>
-              <div class="block">
-                AUG
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[AUGMENTS]"<hr>
-                bikes : cars : trucks : assault vehicles : UV : ships : AUV
-              </div>
-              <div class="icon"><i class="material-icons">developer_board</i></div>
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <div class="block">
-                SLV
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[SLEEVES]"<hr>
-                bikes : cars : trucks : assault vehicles : UV : ships : AUV
-              </div>
-              <div class="icon"><i class="material-icons">fingerprint</i></div>
-            </li>
-          </a>
-          <a href="#">
-            <li>
-              <div class="block">
-                PRP
-              </div>
-              <div class="mini">
-                On_click: script='change_directory','CD';<br>
-                CD: "../DEKER-LIST.GMU::[PROPERTY]"<hr>
-                bikes : cars : trucks : assault vehicles : UV : ships : AUV
-              </div>
-              <div class="icon"><i class="material-icons">select_all</i></div>
-            </li>
-          </a>
+          <a href="appliances.html"><li>appliances</li></a>
+          <a href="#"><li>transport</li></a>
+          <a href="#"><li>pharm</li></a>
+          <a href="augments.html"><li>augments</li></a>
+          <a href="#"><li>sleeves</li></a>
+          <a href="#"><li>tract</li></a>
           <div class="clear"></div>
         </ul>
-      <div class="polka" style="height:auto;animation-direction: reverse;"></div>
+      </div>
       <div class="bigdot" style="float:left;margin:-14px 0px 0px 7px"></div>
       <div class="bigdot" style="float:right;margin:-14px 7px 0px 0px"></div>
       <div class="clear"></div>
@@ -188,20 +116,23 @@
       <div class="top">
         <div style="float:left;">
           <div class="mini tickerbox">
+            <ul class="sml status ticker" style="animation-duration: 40s;">
+              <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+            </ul>
+          </div>
+          <div class="mini tickerbox">
             <ul class="sml status ticker bg" style="animation-duration: 5s; animation-timing-function: steps(400, end);animation-iteration-count:8;">
             </ul>
           </div>
         </div>
         <div style="float:right;">
-          <div class="mini tickerbox">
-            <ul class="sml status ticker" style="animation-duration: 40s;">
-              <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-            </ul>
+          <div class="tickerbox" style="border:1px solid #6e432a;height: 18px;margin-bottom: 0px;">
+            <div class="ticker bg" style="animation-duration: 20s; animation-timing-function: steps(400, end); float:right; height:17px; background: repeating-linear-gradient(to left, #f98033, #f98033 1px, #232323 2px, #232323 3px);"></div>
           </div>
         </div>
         <div class="clear"></div>
       </div>
-      <div class="tac" style="margin-top:-15px;">CC11-002256698744412</div>
+      <div class="tac ref">CC11-002256698744412</div>
       <br>
 
   </div>

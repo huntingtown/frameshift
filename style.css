@@ -29,7 +29,7 @@ ul.status{
     height:12px;
     padding: 1px;
     width: 115px;
-    margin:0px 0px 2px;
+    margin:0px 0px 1px;
   }
 ul.status li{
     width: 11.5%;
@@ -76,30 +76,76 @@ ul.status.ticker li{
   }
 .ref{margin-top: -20px;}
 .mini{font-size: 8px;}
-ul.deker{padding:10%}
+ul.deker{padding:0%;margin:0px;}
 .deker li {
-    width: 46%;
+    width: 100%;
     float: left;
     text-align: center;
-    margin: 0px 2% 15px;
+    margin: 2px 0px;
     background: #232323;
-    border: 1px solid;
+    border: 1px solid #6e432b;
     box-sizing: border-box;
-    border-right: 3px solid;
-    border-left: 3px solid;
-    padding: 5px 0px;
-    animation: repglow 3s steps(50);
-    animation-iteration-count: infinite;
+    border-right: 3px solid #6e432b;
+    border-left: 0px;
+    padding: 0px 0px;
+}
+.deker hr{border: 0px; border-top: 1px dotted #6e432b;}
+.deker li .block {
+    float: left;
+    border-right: 3px solid #6e432b;
+    border-left: 3px solid #6e432b;
+    padding: 18px 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+    width: 15%;
+    box-sizing: border-box;
+    height: 60px;
+}
+.deker li .mini {
+    float: left;
+    width: 70%;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 50px;
+    line-height: 1em;
+}
+.deker li .icon{
+  width: 15%;
+  float: right;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 16px 0px;
+  font-size: 2em;
+  text-align: center;
+  border-left: 3px solid #6e432c;
 }
 .deets ul{border-top:1px dashed rgba(249, 128, 51,0.35);border-bottom:1px dashed rgba(249, 128, 51,0.35);padding:10px 0px; margin:10px 0px;}
-.deets ul li{width:46%; margin:3px 2%;float:left;text-align: right;}
+.deets ul li{width:100%; margin:3px 0%;float:left;text-align: right;}
 .deets ul li .cat{float: left; font-weight:900;}
+.deets ul li::after {content: '';border-bottom: 1px dotted #333;width: 100%;height: 1px;float: left;margin-top: -3px;}
 p{text-transform: none; text-align: justify;}
 
 .deets{font-size: 10px;}
 a {color: inherit;text-decoration: none;}
 
 img {margin: 0px;box-sizing: border-box;max-width: 100%;border: 1px dashed rgba(249, 128, 51,0.35);}
+
+.mini ul.status.ticker{height:4px; width:0px;}
+.mini.tickerbox {
+    width: 124px;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    border: 1px solid #6e432a;
+}
+.ticker.bg {
+    animation: ticker 4s steps(8, end);
+    animation-fill-mode: forwards;
+    background: repeating-linear-gradient(to right, #f98033, #f98033 1px, #232323 2px, #232323 3px);
+    height: 4px;
+}
 
 /* ANIMATIONS */
 .flash{animation-name: flash;
@@ -133,6 +179,7 @@ img {margin: 0px;box-sizing: border-box;max-width: 100%;border: 1px dashed rgba(
 
 .ticker{
   animation: ticker 4s steps(8, end);
+  animation-fill-mode: forwards;
 }
 @keyframes ticker{
   from {width:0%;}
@@ -173,5 +220,4 @@ img {margin: 0px;box-sizing: border-box;max-width: 100%;border: 1px dashed rgba(
 @media only screen and (max-width: 500px) {
   .left,.right,.polka .ref{display:none;}
   .cont{width:100%;margin:auto;}
-  .deets ul li{width:90%; margin:0px 5%;float:left;text-align: right;}
 }
